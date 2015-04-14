@@ -34,6 +34,7 @@ docker run -i -p 3000:3000 \
 ```
 
 **Link your own database**
+
 There is two ways to proceed. You can:
  - Link this container with your own Dockerized DB (InfluxDB / Graphite ..)
  - Fill the empty fields with an existing DB directly in the Grafana web UI
