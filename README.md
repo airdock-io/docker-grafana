@@ -32,6 +32,13 @@ docker run -i -p 3000:3000 \
   -e "GF_SECURITY_ADMIN_PASSWORD=changeit"  \
   airdock/docker-grafana
 ```
+**Volumes**
+
+Volumes available to mount on your local filesystem:
+
+ - "/var/lib/grafana"
+ - "/var/log/grafana"
+ - "/etc/grafana"
 
 **Link your own database**
 
