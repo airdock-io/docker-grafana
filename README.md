@@ -19,8 +19,10 @@ Replace _grafana_ with the tag you want.
 
 
 **Pull & Run**
+```
 docker pull airdock/docker-grafana:latest
 docker run -i -p 3000:3000 airdock/docker-grafana
+````
 
 _Like the Official Grafana container, you can specify the server root URL & the admin password_:
 
