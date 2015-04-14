@@ -12,8 +12,8 @@ Examples:
 ```
 git clone https://github/com/airdock-io/docker-grafana
 cd docker-grafana
-docker build -t _grafana_ .
-docker run -p 3000:3000 -t _grafana_
+docker build -t grafana .
+docker run -p 3000:3000 -t grafana
 ```
 Replace _grafana_ with the tag you want.
 
