@@ -32,7 +32,7 @@ docker run -i -p 3000:3000 \
   -e "GF_SECURITY_ADMIN_PASSWORD=changeit"  \
   airdock/docker-grafana
 ```
-By default, login/passwords are admin/admin
+By default, login / password are admin / admin
 
 **Volumes**
 
