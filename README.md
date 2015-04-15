@@ -41,6 +41,7 @@ Volumes available to mount on your local filesystem:
  - "/var/lib/grafana"
  - "/var/log/grafana"
  - "/etc/grafana"
+ 
 _Exemple_
 ```
 docker run -i -p 3000:3000 \
