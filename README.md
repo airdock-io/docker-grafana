@@ -41,6 +41,17 @@ Volumes available to mount on your local filesystem:
  - "/var/lib/grafana"
  - "/var/log/grafana"
  - "/etc/grafana"
+_Exemple_
+```
+docker run -i -p 3000:3000 \
+  -e "GF_SERVER_ROOT_URL=http://grafana.server.name"  \
+  -e "GF_SECURITY_ADMIN_PASSWORD=changeit"  \
+  -d /var/lib/grafana:/data/grafana/lib \
+  -d /var/log/grafana:/data/grafana/log \
+  -d /etc/grafana:/data/grafana/etc \
+  airdock/docker-grafana
+```
+
 
 **Link your own database**
 
