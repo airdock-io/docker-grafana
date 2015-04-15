@@ -24,7 +24,7 @@ docker pull airdock/docker-grafana:latest
 docker run -i -p 3000:3000 airdock/docker-grafana
 ````
 
-_Like the Official Grafana container, you can specify the server root URL & the admin password_:
+_Like the Official Grafana container, you can specify the server root URL & admin password_:
 
 ```
 docker run -i -p 3000:3000 \
