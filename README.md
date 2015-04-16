@@ -10,10 +10,10 @@ Examples:
 
 **Build & Run**:
 ```
-git clone https://github/com/airdock-io/docker-grafana
+git clone https://github.com/airdock-io/docker-grafana
 cd docker-grafana
 docker build -t grafana .
-docker run -p 3000:3000 -t grafana
+docker run -d -p 3000:3000 -t grafana
 ```
 Replace _grafana_ with the tag you want.
 
