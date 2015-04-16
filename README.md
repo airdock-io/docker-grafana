@@ -15,7 +15,9 @@ cd docker-grafana
 docker build -t grafana .
 docker run -d -p 3000:3000 -t grafana
 ```
-Replace _grafana_ with the tag you want.
+You Grafana web UI is now available via http://your.server.ip:3000
+
+(Replace _grafana_ with the tag you want.)
 
 
 **Pull & Run**
