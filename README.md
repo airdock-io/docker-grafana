@@ -22,8 +22,8 @@ You Grafana web UI is now available via http://your.server.ip:3000
 
 **Pull & Run**
 ```
-docker pull airdock/docker-grafana:latest
-docker run -i -p 3000:3000 airdock/docker-grafana
+docker pull airdock/grafana:latest
+docker run -i -p 3000:3000 airdock/grafana
 ````
 
 _Like the Official Grafana container, you can specify the server root URL & admin password_:
@@ -32,7 +32,7 @@ _Like the Official Grafana container, you can specify the server root URL & admi
 docker run -i -p 3000:3000 \
   -e "GF_SERVER_ROOT_URL=http://grafana.server.name"  \
   -e "GF_SECURITY_ADMIN_PASSWORD=changeit"  \
-  airdock/docker-grafana
+  airdock/grafana
 ```
 By default, login / password are admin / admin
 
@@ -52,7 +52,7 @@ docker run -i -p 3000:3000 \
   -d /var/lib/grafana:/data/grafana/lib \
   -d /var/log/grafana:/data/grafana/log \
   -d /etc/grafana:/data/grafana/etc \
-  airdock/docker-grafana
+  airdock/grafana
 ```
 
 
