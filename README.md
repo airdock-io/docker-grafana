@@ -49,9 +49,9 @@ _Exemple_
 docker run -i -p 3000:3000 \
   -e "GF_SERVER_ROOT_URL=http://grafana.server.name"  \
   -e "GF_SECURITY_ADMIN_PASSWORD=changeit"  \
-  -v /var/lib/grafana:/data/grafana/lib \
-  -v /var/log/grafana:/data/grafana/log \
-  -v /etc/grafana:/data/grafana/etc \
+  -v /data/grafana/lib:/var/lib/grafana \
+  -v /data/grafana/log:/var/log/grafana \
+  -v /data/grafana/etc:/etc/grafana \
   airdock/grafana
 ```
 
