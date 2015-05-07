@@ -6,17 +6,14 @@
 FROM airdock/base:latest
 MAINTAINER Antoine Serrano <heyitsmozzie@gmail.com>
 
-RUN apt-get update && apt-get -y install libfontconfig wget adduser openssl ca-certificates
-
-RUN wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.0.1_amd64.deb
-
-RUN dpkg -i grafana_2.0.1_amd64.deb
+RUN apt-get update && apt-get -y install libfontconfig wget adduser openssl ca-certificates & \
+  wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.0.1_amd64.deb && \
+  dpkg -i grafana_2.0.1_amd64.deb && \
+  /root/post-install
 
 EXPOSE 3000
 
-VOLUME ["/var/lib/grafana"]
-VOLUME ["/var/log/grafana"]
-VOLUME ["/etc/grafana"]
+VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
 
 WORKDIR /usr/share/grafana
 
