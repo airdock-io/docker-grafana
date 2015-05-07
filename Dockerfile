@@ -6,7 +6,7 @@
 FROM airdock/base:latest
 MAINTAINER Antoine Serrano <heyitsmozzie@gmail.com>
 
-RUN apt-get update && apt-get -y install libfontconfig wget adduser openssl ca-certificates & \
+RUN apt-get update && apt-get -y install libfontconfig wget adduser openssl ca-certificates && \
   wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.0.1_amd64.deb && \
   dpkg -i grafana_2.0.1_amd64.deb && \
   /root/post-install
