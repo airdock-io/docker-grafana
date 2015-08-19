@@ -62,10 +62,6 @@ There is two ways to proceed. You can:
  - Link this container with your own Dockerized DB (InfluxDB / Graphite ..)
  - Fill the empty fields with an existing DB directly in the Grafana web UI
 
-# Coming soon
-
- - Complete stack with Docker Compose
-
 
  # MIT License
 
