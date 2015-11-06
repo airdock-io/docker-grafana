@@ -1,4 +1,4 @@
-# docker-grafana
+# docker-grafana [![](https://badge.imagelayers.io/airdock/grafana:latest.svg)](https://imagelayers.io/?images=airdock/grafana:latest 'Get your own badge on imagelayers.io')
 
 Try the latest available Grafana package with this simple Dockerfile based on our lovely _airdock-base_.
 
