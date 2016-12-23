@@ -6,11 +6,9 @@
 FROM airdock/base:latest
 MAINTAINER Antoine Serrano <heyitsmozzie@gmail.com>
 
-GRAFANA_VERSION=4.0.2-1481203731
-
 RUN apt-get update && apt-get -y install libfontconfig wget adduser openssl ca-certificates && \
-  wget https://grafanarel.s3.amazonaws.com/builds/grafana_$GRAFANA_VERSION_amd64.deb && \
-  dpkg -i grafana_$GRAFANA_VERSION_amd64.deb && \
+  wget https://grafanarel.s3.amazonaws.com/builds/grafana_4.0.2-1481203731_amd64.deb && \
+  dpkg -i grafana_4.0.2-1481203731_amd64.deb && \
   /root/post-install
 
 EXPOSE 3000
